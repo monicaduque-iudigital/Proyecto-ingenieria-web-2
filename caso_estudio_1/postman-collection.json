@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6",
+		"name": "API Películas - Colección Completa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "api-peliculas-export"
+	},
+	"item": [
+		{
+			"name": "GÉNEROS",
+			"item": [
+				{
+					"name": "GET - Listar Géneros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/genero",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "genero"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Crear Género",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Acción\",\n    \"descripcion\": \"Películas de acción y aventuras\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/genero",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "genero"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DIRECTORES",
+			"item": [
+				{
+					"name": "GET - Listar Directores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/directores",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "directores"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Crear Director",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Christopher Nolan\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/directores",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "directores"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT - Actualizar Director",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Christopher Nolan Actualizado\",\n    \"estado\": \"Activo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/directores/{{directorId}}",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "directores", "{{directorId}}"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PRODUCTORAS",
+			"item": [
+				{
+					"name": "GET - Listar Productoras",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/productora",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "productora"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Crear Productora",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombres\": \"Warner Bros Pictures\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/productora",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "productora"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT - Actualizar Productora",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombres\": \"Warner Bros Pictures Updated\",\n    \"estado\": \"Activo\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/productora/{{productoraId}}",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "productora", "{{productoraId}}"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TIPOS",
+			"item": [
+				{
+					"name": "GET - Listar Tipos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/tipo",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "tipo"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Crear Tipo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Película\",\n    \"descripcion\": \"Largometraje cinematográfico\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/tipo",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "tipo"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT - Actualizar Tipo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\": \"Película Actualizada\",\n    \"descripcion\": \"Largometraje cinematográfico actualizado\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/tipo/{{tipoId}}",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "tipo", "{{tipoId}}"]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MEDIA",
+			"item": [
+				{
+					"name": "GET - Listar Media",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/media",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "media"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST - Crear Media",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"serial\": \"MOV001\",\n    \"titulo\": \"Inception\",\n    \"sinopsis\": \"Un ladrón que roba secretos corporativos a través del uso de la tecnología de sueño compartido\",\n    \"url\": \"https://ejemplo.com/inception\",\n    \"imagenPortada\": \"https://ejemplo.com/inception.jpg\",\n    \"anioEstreno\": 2010,\n    \"generoPrincipal\": \"{{generoId}}\",\n    \"directorPrincipal\": \"{{directorId}}\",\n    \"productora\": \"{{productoraId}}\",\n    \"tipo\": \"{{tipoId}}\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/media",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "media"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT - Actualizar Media",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"serial\": \"MOV001\",\n    \"titulo\": \"Inception Updated\",\n    \"sinopsis\": \"Sinopsis actualizada\",\n    \"url\": \"https://ejemplo.com/inception-updated\",\n    \"imagenPortada\": \"https://ejemplo.com/inception-updated.jpg\",\n    \"anioEstreno\": 2010,\n    \"generoPrincipal\": \"{{generoId}}\",\n    \"directorPrincipal\": \"{{directorId}}\",\n    \"productora\": \"{{productoraId}}\",\n    \"tipo\": \"{{tipoId}}\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/media/{{mediaId}}",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "media", "{{mediaId}}"]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE - Eliminar Media",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/media/{{mediaId}}",
+							"protocol": "http",
+							"host": ["localhost"],
+							"port": "4000",
+							"path": ["api", "media", "{{mediaId}}"]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:4000",
+			"type": "string"
+		},
+		{
+			"key": "generoId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "directorId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "productoraId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "tipoId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "mediaId",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
